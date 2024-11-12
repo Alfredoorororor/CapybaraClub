@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.centrado{
+    height: 180vh;
+    background-color: #68a094;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+header {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('Img/BANNER.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+nav .nombre-pagina {
+    font-size: 1.5em;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f3e670;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+    z-index: 1;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+section {
+    padding: 20px;
+}
+.section p{
+    display: flex;
+    font: size 24px;;
+}
+
+#sobre-nosotros .about-us {
+    display: flex;
+    align-items: center;
+}
+
+#sobre-nosotros .about-us img {
+    max-width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+/* Estilos del Botón "Conoce a nuestro equipo" */
+.btn-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #fae673;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-mas:hover {
+    background-color: #e8eb4e;
+    transform: scale(1.05);
+}
+
+
+#productos {
+    text-align: center;
+    background-color: #fae673;
+    color: white;
+}
+
+.producto {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 1.5em;
+    color: #e4d65d;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #80b3a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #68a094;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.hero {
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
